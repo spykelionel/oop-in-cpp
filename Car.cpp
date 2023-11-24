@@ -3,24 +3,24 @@
 
 void Car::SwitchOn()
 {
-    printMessage("Car is Switch on");
+    std::cout << "Car is switch on" << std::endl;
 }
 
 void Car::SwitchOff()
 {
-    printMessage("Car is Switch off");
+    std::cout << "Car is switch off" << std::endl;
 }
 
 void Car::Accelerate()
 {
-    printMessage("Car is accelerating");
+    std::cout << "Car is accelerating" << std::endl;
 }
-
 void Car::Brake()
 {
 }
 
-void printMessage(std::string message)
+Car::Car(std::string manuf, float fuel, int reg) : manufacturer(manuf), registrationNum(reg)
 {
-    std::cout << message << std::endl;
+    this->fuel = fuel;
+    speed = 0;
 }

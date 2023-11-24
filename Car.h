@@ -16,12 +16,12 @@ private:
     int registrationNum;
 
 public:
-    static void SwitchOn();
-    static void SwitchOff();
+    Car(std::string manu, float fuel, int reg);
+    void SwitchOn();
+    void SwitchOff();
     void Accelerate();
     void Brake();
-    Car(/* args */);
-    ~Car();
+    bool isRunnning;
 };
 
 // #endif //CARABSTRACTION_CAR_H
