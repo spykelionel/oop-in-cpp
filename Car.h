@@ -14,6 +14,7 @@ private:
     float fuel;
     float speed;
     int registrationNum;
+    bool isRunnning;
 
 public:
     Car(std::string manu, float fuel, int reg);
@@ -21,7 +22,9 @@ public:
     void SwitchOff();
     void Accelerate();
     void Brake();
-    bool isRunnning;
+    void FillFuel();
+    float GetFuel();
+    float GetSpeed();
 };
 
 // #endif //CARABSTRACTION_CAR_H

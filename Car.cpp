@@ -19,6 +19,18 @@ void Car::Brake()
 {
 }
 
+void Car::FillFuel()
+{
+}
+
+float Car::GetFuel()
+{
+}
+
+float Car::GetSpeed()
+{
+}
+
 Car::Car(std::string manuf, float fuel, int reg) : manufacturer(manuf), registrationNum(reg)
 {
     this->fuel = fuel;
