@@ -22,7 +22,7 @@ public:
     void SwitchOff();
     void Accelerate();
     void Brake();
-    void FillFuel();
+    void FillFuel(float amount);
     float GetFuel();
     float GetSpeed();
 };

@@ -19,7 +19,7 @@ void Car::Brake()
 {
 }
 
-void Car::FillFuel()
+void Car::FillFuel(float amount)
 {
 }
 
