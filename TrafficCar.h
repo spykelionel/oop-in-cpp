@@ -8,6 +8,7 @@ namespace RecklessDriver
         float cash;  // use to accumulate the cash
 
     public:
+        TrafficCar(int _damage, float _cash);
         int GetDamage() const
         {
             return damaage;
