@@ -1,17 +1,14 @@
 #include "TrafficCar.h"
+#include "GameObject.h"
 
 namespace RecklessDriver
 {
     class Sedan : public TrafficCar
     {
     public:
-        Sedan(int impact, float cash)
-        {
-        }
+        Sedan(int _damage, float _cash);
 
-        void OnCollision(void)
-        {
-        }
+        void OnCollision(GameObject &other) override;
     }
 
 }
